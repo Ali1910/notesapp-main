@@ -16,9 +16,9 @@ class CustomTextFeild extends StatelessWidget {
         textAlign: TextAlign.right,
         cursorColor: kprimarycolor,
         decoration: InputDecoration(
-          labelText: '$label',
+          labelText: label,
           labelStyle: const TextStyle(fontSize: 18, color: kprimarycolor),
-          hintText: '$hint',
+          hintText: hint,
           hintStyle: const TextStyle(fontSize: 18),
           border: buildborder(),
           enabledBorder: buildborder(),
