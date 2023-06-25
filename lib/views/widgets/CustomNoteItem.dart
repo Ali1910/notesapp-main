@@ -21,13 +21,13 @@ class NoteItem extends StatelessWidget {
         children: [
           ListTile(
             title: const Text(
-              'Flutter Tips',
+              ' ذاكر درس من .net',
               style: TextStyle(color: Colors.black, fontSize: 26),
             ),
             subtitle: Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: Text(
-                'Follow your dream ali',
+                'اليوم الثاني ',
                 style: TextStyle(
                     color: Colors.black.withOpacity(0.5), fontSize: 16),
               ),
