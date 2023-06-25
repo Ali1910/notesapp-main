@@ -1,1 +1,3 @@
-double size = 24;
+import 'package:flutter/material.dart';
+
+const kprimarycolor = Color(0xff62fcd7);
