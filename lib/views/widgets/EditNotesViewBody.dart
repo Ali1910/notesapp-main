@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notesapp/views/widgets/CustomAppBar.dart';
+import 'package:notesapp/views/widgets/CustomTextFeild.dart';
 
 class EditNotesViewBody extends StatelessWidget {
   const EditNotesViewBody({super.key});
@@ -13,7 +14,25 @@ class EditNotesViewBody extends StatelessWidget {
           SizedBox(
             height: 60,
           ),
-          CustomAppbar(),
+          CustomAppbar(
+            text: 'تعديل المهمة',
+            icon: Icons.edit,
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          CustomTextFeild(
+            hint: 'ادخل عنوان المهمة',
+            label: 'العنوان ',
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          CustomTextFeild(
+            hint: 'ادخل وصف المهمة',
+            label: ' تفاصيل المهة',
+            maxlines: 3,
+          ),
         ],
       ),
     );
