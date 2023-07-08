@@ -14,10 +14,7 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.dark, fontFamily: 'IBM Plex Sans Arabic'),
-      home: const Directionality(
-        textDirection: TextDirection.rtl,
-        child: NotesView(),
-      ),
+      home: const NotesView(),
     );
   }
 }

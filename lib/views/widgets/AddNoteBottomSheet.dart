@@ -16,15 +16,15 @@ class AddNoteBottomSheet extends StatelessWidget {
               height: 40,
             ),
             CustomTextFeild(
-              hint: 'ادخل عنوان المهمة',
-              label: 'العنوان ',
+              hint: ' enter note ',
+              label: 'note address ',
             ),
             SizedBox(
               height: 16,
             ),
             CustomTextFeild(
-              hint: 'اكتب وصف المهمة',
-              label: ' تفاصيل المهة',
+              hint: 'enter note description',
+              label: ' enter note detial ',
               maxlines: 3,
             ),
             SizedBox(

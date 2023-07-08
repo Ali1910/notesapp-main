@@ -31,13 +31,13 @@ class NoteItem extends StatelessWidget {
           children: [
             ListTile(
               title: const Text(
-                ' اقرا كتاب',
+                ' flutter tips',
                 style: TextStyle(color: Colors.black, fontSize: 26),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
-                  ' اقرا 20 صفحة من كتاب ارسين لوبين الجديد ',
+                  'watch 20 videos of new course  ',
                   style: TextStyle(
                       color: Colors.black.withOpacity(0.5), fontSize: 16),
                 ),

@@ -15,22 +15,22 @@ class EditNotesViewBody extends StatelessWidget {
             height: 60,
           ),
           CustomAppbar(
-            text: 'تعديل المهمة',
+            text: 'edit notes',
             icon: Icons.edit,
           ),
           SizedBox(
             height: 50,
           ),
           CustomTextFeild(
-            hint: 'ادخل عنوان المهمة',
-            label: 'العنوان ',
+            hint: ' add note ',
+            label: 'note ',
           ),
           SizedBox(
             height: 16,
           ),
           CustomTextFeild(
-            hint: 'ادخل وصف المهمة',
-            label: ' تفاصيل المهة',
+            hint: 'note description',
+            label: '  note detials',
             maxlines: 3,
           ),
         ],

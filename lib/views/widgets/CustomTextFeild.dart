@@ -9,21 +9,18 @@ class CustomTextFeild extends StatelessWidget {
   final int maxlines;
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: TextFormField(
-        maxLines: maxlines,
-        textAlign: TextAlign.right,
-        cursorColor: kprimarycolor,
-        decoration: InputDecoration(
-          labelText: label,
-          labelStyle: const TextStyle(fontSize: 18, color: kprimarycolor),
-          hintText: hint,
-          hintStyle: const TextStyle(fontSize: 18),
-          border: buildborder(),
-          enabledBorder: buildborder(),
-          focusedBorder: buildborder(bordercolor: kprimarycolor),
-        ),
+    return TextFormField(
+      maxLines: maxlines,
+      textAlign: TextAlign.right,
+      cursorColor: kprimarycolor,
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: const TextStyle(fontSize: 18, color: kprimarycolor),
+        hintText: hint,
+        hintStyle: const TextStyle(fontSize: 18),
+        border: buildborder(),
+        enabledBorder: buildborder(),
+        focusedBorder: buildborder(bordercolor: kprimarycolor),
       ),
     );
   }
