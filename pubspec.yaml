@@ -80,6 +80,9 @@ flutter:
     - family: IBM Plex Sans Arabic
       fonts:
         - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+    - family: Roboto Slab
+      fonts:
+        - asset: assets/fonts/RobotoSlab-VariableFont_wght.ttf
        
     
   # For details regarding fonts from package dependencies,
