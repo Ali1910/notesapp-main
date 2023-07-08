@@ -7,8 +7,7 @@ class EditNotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Directionality(
-          textDirection: TextDirection.rtl, child: EditNotesViewBody()),
+      body: EditNotesViewBody(),
     );
   }
 }
