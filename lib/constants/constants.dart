@@ -9,3 +9,17 @@ const List<Color> colors = [
   Color(0xffCFD7C7),
   Color(0xffF6F1D1)
 ];
+const SnackBar snackbar = SnackBar(
+  backgroundColor: Colors.black,
+  content: Padding(
+    padding: EdgeInsets.all(16.0),
+    child: Text(
+      'note added successfully',
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 24,
+      ),
+    ),
+  ),
+  duration: const Duration(seconds: 2),
+);
