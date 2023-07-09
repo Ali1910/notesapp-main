@@ -52,7 +52,7 @@ class _EditNotesViewBodyState extends State<EditNotesViewBody> {
             onchaged: (value) {
               content = value;
             },
-            hint: '${widget.note.subtitle}',
+            hint: ' ${widget.note.subtitle} ',
             label: 'note detials',
             maxlines: 3,
           ),
