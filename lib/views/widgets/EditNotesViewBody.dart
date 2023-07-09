@@ -42,8 +42,8 @@ class _EditNotesViewBodyState extends State<EditNotesViewBody> {
             onchaged: (value) {
               title = value;
             },
-            hint: 'note',
-            label: widget.note.title,
+            hint: ' ${widget.note.title} ',
+            label: 'note',
           ),
           const SizedBox(
             height: 16,
@@ -52,8 +52,8 @@ class _EditNotesViewBodyState extends State<EditNotesViewBody> {
             onchaged: (value) {
               content = value;
             },
-            hint: 'note detials',
-            label: widget.note.subtitle,
+            hint: '${widget.note.subtitle}',
+            label: 'note detials',
             maxlines: 3,
           ),
         ],
