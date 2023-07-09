@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:notesapp/cubits/notes_cubits/NotesCubit/NotesCubit.dart';
 import 'package:notesapp/cubits/notes_cubits/add_notes_cubit.dart';
 import 'package:notesapp/cubits/notes_cubits/add_notes_state.dart';
