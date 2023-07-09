@@ -50,6 +50,7 @@ class NoteItem extends StatelessWidget {
               trailing: IconButton(
                 onPressed: () {
                   note.delete();
+                  BlocProvider.of<Notescubit>(context).fetchallnote();
                 },
                 icon: const Icon(
                   FontAwesomeIcons.trash,
