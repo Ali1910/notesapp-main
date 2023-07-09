@@ -45,34 +45,35 @@ class _addnoteformState extends State<addnoteform> {
             },
             hint: 'enter note description',
             label: ' enter note detial ',
-            maxlines: 3,
+            maxlines: 5,
           ),
           const SizedBox(
-            height: 180,
+            height: 60,
           ),
           BlocBuilder<AddNotesCubit, AddNotestates>(
             builder: (context, state) {
-              return CustomButton(
-                isloading: state is NotesAddLoadingState ? true : false,
-                ontap: () {
-                  if (formkey.currentState!.validate()) {
-                    formkey.currentState!.save();
-                    var notemodel = NoteModel(
-                        title: title!,
-                        subtitle: subtitle!,
-                        date: DateTime.now().toString(),
-                        color: Colors.blue.value);
-                    BlocProvider.of<AddNotesCubit>(context).addnote(notemodel);
-                  } else {
-                    autovalidateMode = AutovalidateMode.always;
-                    setState(() {});
-                  }
-                },
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: CustomButton(
+                  isloading: state is NotesAddLoadingState ? true : false,
+                  ontap: () {
+                    if (formkey.currentState!.validate()) {
+                      formkey.currentState!.save();
+                      var notemodel = NoteModel(
+                          title: title!,
+                          subtitle: subtitle!,
+                          date: DateTime.now().toString(),
+                          color: Colors.blue.value);
+                      BlocProvider.of<AddNotesCubit>(context)
+                          .addnote(notemodel);
+                    } else {
+                      autovalidateMode = AutovalidateMode.always;
+                      setState(() {});
+                    }
+                  },
+                ),
               );
             },
-          ),
-          const SizedBox(
-            height: 240,
           ),
         ],
       ),

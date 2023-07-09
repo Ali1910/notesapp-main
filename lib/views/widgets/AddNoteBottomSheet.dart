@@ -17,16 +17,19 @@ class AddNoteBottomSheet extends StatelessWidget {
           if (State is NotesFailAddState) {
             print('failed ${State.errormessage.toString()}');
           }
-          if (State is NotesFailAddState) {
+          if (State is NotesSucessAddingState) {
             Navigator.pop(context);
           }
         },
         builder: (context, state) {
           return AbsorbPointer(
             absorbing: state is NotesAddLoadingState ? true : false,
-            child: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: SingleChildScrollView(child: addnoteform()),
+            child: Padding(
+              padding: EdgeInsets.only(
+                  left: 16,
+                  right: 16,
+                  bottom: MediaQuery.of(context).viewInsets.bottom),
+              child: const SingleChildScrollView(child: addnoteform()),
             ),
           );
         },
