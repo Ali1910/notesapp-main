@@ -73,8 +73,10 @@ class _addnoteformState extends State<addnoteform> {
                       var notemodel = NoteModel(
                           title: title!,
                           subtitle: subtitle!,
-                          date: '${currentdataformat}',
-                          color: Colors.blue.value);
+                          date: currentdataformat,
+                          color: BlocProvider.of<AddNotesCubit>(context)
+                              .color
+                              .value);
                       BlocProvider.of<AddNotesCubit>(context)
                           .addnote(notemodel);
                     } else {
