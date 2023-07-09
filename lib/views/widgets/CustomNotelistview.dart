@@ -26,7 +26,9 @@ class NotesListView extends StatelessWidget {
                 );
               },
               itemBuilder: (context, index) {
-                return const NoteItem();
+                return NoteItem(
+                  note: notes[index],
+                );
               },
               itemCount: notes.length,
             ),
